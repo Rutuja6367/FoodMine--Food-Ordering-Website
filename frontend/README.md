@@ -1,66 +1,59 @@
-Food Ordering Website
+# Food Ordering Web Application
 
-In the project directory, you can run:
+Welcome to the Food Ordering Web Application repository! This project provides a seamless experience for users to browse, select, and order food from various restaurants. The application includes user authentication, a searchable menu, cart management, order placement, and payment integration.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication:** Sign up, login, and secure sessions using JWT.
+- **Restaurant Browsing:** View a list of available restaurants.
+- **Menu Search:** Search for food items within a restaurant.
+- **Cart Management:** Add, update, and remove items in the cart.
+- **Order Placement:** Place orders and view order history.
+- **Payment Integration:** Secure payment processing.
+- **Responsive Design:** Accessible on both desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **Frontend:** React, TypeScript, JavaScript, HTML, CSS
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** JWT, OAuth
+- **Cloud Services:** AWS (Amplify, Cognito, API Gateway, DynamoDB)
+- **CI/CD:** GitHub Actions, Jenkins
+- **Testing:** Jest, Mocha, Chai
+- **Containerization:** Docker, Kubernetes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 or later)
+- MongoDB
+- AWS account (for cloud services)
+- Docker (optional, for containerization)
 
-### `npm run eject`
+### Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    git clone https://github.com/yourusername/food-ordering-app.git
+    cd food-ordering-app
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    npm install
+    ```
