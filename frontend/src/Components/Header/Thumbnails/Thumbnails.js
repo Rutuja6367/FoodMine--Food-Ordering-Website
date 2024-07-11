@@ -13,7 +13,7 @@ export default function Thumbnails({foods}){
                 src={`/foods/${food.imageUrl}`}
                 alt={food.name}
                 />
-                </Link>
+                
                 <div className={classes.content}>
                     <div className={classes.name}>{food.name}</div>
                     <span className={`${classes.favorite} ${food.favorite ? '' : classes.not }`}>
@@ -37,6 +37,7 @@ export default function Thumbnails({foods}){
                         <Price price={food.price}/>
                     </div>
                 </div>
+                </Link>
             </li>
         ))}
     </ul>
