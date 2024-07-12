@@ -51,3 +51,35 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: gray;
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.origins{
+    flex: 9;
+}
+
+.cook_time{
+    font-size: 0.9rem;
+    flex: 3;
+    text-align: right;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0.9rem;
+    background-color: rgb(251, 251, 252);
+    padding: 0.3rem 100% 0 0;
+    color: grey;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+}
