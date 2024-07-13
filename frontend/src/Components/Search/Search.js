@@ -20,7 +20,7 @@ function Search() {
       defaultValue={searchTerm}>
       </input>
       <button onClick={search}>
-         Search...
+         Search
       </button>
     </div>
   )
