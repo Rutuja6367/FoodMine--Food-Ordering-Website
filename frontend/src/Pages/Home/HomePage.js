@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer } from 'react'
-import { getAll, search, getAlltags } from '../../Services/FoodService';
+import { getAll, search, getAlltags, getAllByTag } from '../../Services/FoodService';
 import Thumbnails from '../../Components/Header/Thumbnails/Thumbnails';
 import { useParams } from 'react-router-dom';
 import Search from '../../Components/Search/Search';
@@ -19,13 +19,15 @@ const reducer = (state,action) => {
 export default function HomePage(){
     const [state, dispatch] = useReducer(reducer, initialState);
     const { foods, tags } = state;
-    const {searchTerm} = useParams();
+    const {searchTerm, tag} = useParams();
 
     useEffect(()=> {
         getAlltags().then(tags => dispatch({type:'TAGS_LOADED', payload: tags}));
-        const loadFoods = searchTerm ? search(searchTerm) : getAll();
+        const loadFoods = tag ? getAllByTag(tag) : 
+        searchTerm ? search(searchTerm) : getAll();
         loadFoods.then(foods => dispatch({type: 'FOODS_LOADED', payload: foods}));
-    },[searchTerm]) 
+    },[searchTerm, tag]) 
+
     return <>
     <Search/>
     <Tags tags={tags}/>
