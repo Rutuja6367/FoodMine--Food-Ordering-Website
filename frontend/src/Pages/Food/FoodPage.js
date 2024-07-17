@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { getByid } from '../../Services/FoodService';
 import StarRating from '../../Components/Header/StarRating/StarRating';
 import Tags from '../../Components/Tags/Tags';
+import Price from '../../Components/Header/Price/Price';
 
 function FoodPage() {
 
@@ -40,9 +41,18 @@ function FoodPage() {
                     </div>
                     <div className={classes.tags}>
                         {food.tags && (
-                            <Tags tags={food.tags.map(tag => ({name:tag}))}/>
+                            <Tags tags={food.tags.map(tag => ({name:tag}))} forFoodPage={true}/>
                         )}
-</div>
+                      </div>
+                     <div className={classes.cook_time}>
+                        <span>
+                            Time to cook about <strong>{food.cookTime}</strong> minutes
+                        </span>
+                        </div>
+                        <div className={classes.price}>
+                            <Price price={food.price}/>
+                        </div>
+                        <button>ADD TO CART</button>
                         </div>
         </div>
     )}
