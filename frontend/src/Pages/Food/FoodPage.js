@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import classes from './FoodPage.module.css';
 import { useParams } from 'react-router-dom';
 import { getByid } from '../../Services/FoodService';
+import StarRating from '../../Components/Header/StarRating/StarRating';
+import Tags from '../../Components/Tags/Tags';
 
 function FoodPage() {
 
@@ -24,10 +26,24 @@ function FoodPage() {
                     <span className={classes.name}>
                         {food.name}
                     </span>
-                    <span className={`${classes.favorite} ${food.favorite ? '' : classes.not}`}></span>
+                    <span className={`${classes.favorite} ${food.favorite ? '' : classes.not}`}>
                     ❤ 
+                    </span>
                 </div>
-        </div>
+                <div className={classes.rating}>
+                    <StarRating stars={food.stars} size={25}/>
+                    </div>
+                    <div className={classes.origin}>
+                        {food.origins?.map(origin=>(
+                            <span key={origin}>{origin}</span>
+                        ))}
+                    </div>
+                    <div className={classes.tags}>
+                        {food.tags && (
+                            <Tags tags={food.tags.map(tag => ({name:tag}))}/>
+                        )}
+</div>
+                        </div>
         </div>
     )}
     </div>
