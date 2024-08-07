@@ -1,5 +1,7 @@
 # FoodMine Ordering Website
 
+![foodpic](https://github.com/user-attachments/assets/1098af55-604e-4c13-b57f-67abee04b860)
+
 Welcome to **FoodMine**, your ultimate destination for seamless online food ordering! Whether you're craving a quick snack or planning a grand feast, FoodMine connects you with the best local restaurants and eateries, ensuring a delightful culinary experience.
 
 ## Table of Contents
